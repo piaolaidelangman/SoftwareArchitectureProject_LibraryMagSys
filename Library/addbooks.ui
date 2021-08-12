@@ -1,0 +1,1538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>addBooks</class>
+ <widget class="QWidget" name="addBooks">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>936</width>
+    <height>628</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>40</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Adobe Arabic</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>选择分类</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>80</y>
+     <width>72</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>书名</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>130</y>
+     <width>72</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>作者</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>240</y>
+     <width>72</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>条形码</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>190</y>
+     <width>72</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>价格</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>300</y>
+     <width>72</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>出版社</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>360</y>
+     <width>72</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>数量</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditName">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>70</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>百年孤独</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditWriter">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>130</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>加西亚马尔克斯</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPrice">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>180</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>49</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditCode">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>230</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>177061</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPress">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>300</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>南海出版社</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditNum">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>360</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>470</y>
+     <width>101</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Adobe Arabic</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QTreeWidget" name="treeWidget">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>80</y>
+     <width>251</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>分类</string>
+    </property>
+   </column>
+   <item>
+    <property name="text">
+     <string>A马列主义、毛泽东思想、邓小平理论</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>A1马克思、恩格斯著作</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>A11选集、文集</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>A119选读</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>A12单行著作</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>A121马克思主义形成时期</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A122革命风暴的高涨低落时期</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A123第一国际和巴黎公社时期</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A124马克思主义广泛传播和各国建立社会主义政党时期</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A125第二国际时期</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>A13书信集、日记、函电、谈话</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A14诗词</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A15手迹</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A16专题汇题</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A18语录</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>A2列宁著作</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>A21选集、文集</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>A219选读</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>A22单行著作</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>A221俄国社会民主工党形成和布尔什维克派出现时期</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A222第一次俄国革命时期</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A223斯托雷平反动时期和布尔什维克形成独立政党时期</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A224第一次世界大战以前工人运动的高涨及大战时期</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A225第二次俄国革命和社会主义革命时期</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A226帝国主义武装干涉和国内战争时期</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>A227国民经济恢复时期</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>A23书信集、日记、函电、谈话</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A25手迹</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A26专题汇题</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A28语录</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>A3斯大林著作</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>A31选集、文集</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A32单行著作</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A33书信集、日记、函电、谈话</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A35手迹</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A36专题汇题</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>A38语录</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>A4毛泽东著作</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A49邓小平著作</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A5马克思、恩格斯、列宁、斯大林、毛泽东、邓小平著作汇编</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A7马克思、恩格斯、列宁、斯大林、毛泽东、邓小平生平和传记</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A8马克思、恩格斯、列宁、斯大林、毛泽东、邓小平理论的学习和研究</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>B哲学、宗教</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>B0哲学理论</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B1世界哲学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B2中国哲学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B3亚洲哲学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B4非洲哲学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B5欧洲哲学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B6大洋洲哲学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B7美洲哲学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B80思维科学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B81逻辑学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B82伦理学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B83美学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B84心理学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B9宗教</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>C社会科学总论</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>C0社会科学理论与方法论</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C1社会科学现状及发展</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C2团体、会议、社会科学机构</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C3社会科学研究方法</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C4社会科学教育与普及</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C5社会科学丛书、文集、连续性出版物</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C6社会科学参考工具书</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C7社会科学文献检索工具</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C8工具书</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C91社会学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C92人口学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C93管理学</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>D政治、法律</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>D0政治理论</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D1国际共产主义运动</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D2中国共产党</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D3各国共产党</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D4工人、农民、青年、妇女运动与组织</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D5世界政治</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D6中国政治</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D7各国政治</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D8外交、国际关系</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D9法律</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>E军事</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>E0军事理论</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E1世界军事</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E2中国军事</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E3亚洲各国军事</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E4非洲各国军事</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E5欧洲各国军事</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E6大洋洲及太平洋岛屿各国军事</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E7美洲各国军事</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E8战略学、战役学、战术学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E9军事技术</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>F经济</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>F0经济学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F1世界各国经济概况、经济史、经济地理</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F2经济计划与管理</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F3农业经济</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F4工业经济</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F5交通运输经济</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F6邮电经济</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F7贸易经济</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F8财政、金融</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>G文化、科学、教育、体育</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>G0文化理论</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G1世界各国文化与文化事业</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G2信息与知识传播</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G3科学、科学研究</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G4教育</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G5世界各国教育事业</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G6各级教育</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G7各类教育</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G8体育</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>H语言、文学</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>H0语言学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>H1汉语</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>H2中国少数民族语言</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>H3常用外国语</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>H4汉藏语系</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>H5阿尔泰语系</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>H7印欧语系</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>H8非洲诸语言</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>H9国际辅助语</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>I文学</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>I0文学理论</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I1世界文学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I2中国文学</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>I21作品集</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>I22诗歌、韵文</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>I23戏剧文学</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>I24小说</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>I25报告文字</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>I26散文</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>I27民间文学</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>I28儿童文学</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>I29少数民族文学</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>I3亚洲各国文学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I4非洲各国文学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I5欧洲各国文学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I6大洋洲及太平洋岛屿各国文学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I7美洲各国文学</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>J艺术</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>J0艺术理论</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>J1世界各国艺术概况</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>J2绘画</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>J3雕塑</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>J4摄影艺术</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>J5工艺美术</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>J6音乐</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>J7舞蹈</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>J8戏剧艺术</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>J9电影、电视艺术</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>K历史、地理</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>K0史学理论</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>K1世界史</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>K2中国史</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>K3亚洲史</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>K4非洲史</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>K6欧洲史</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>K7美洲史</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>K81传记</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>K9地理</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>N自然科学总论</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>N0自然科学理论与方法论</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>N1自然科学现状及发展</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>N2自然科学机构、团体、会议</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>N3自然科学研究方法</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>N4自然科学教育与普及</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>N5自然科学丛书、文集、连续性出版物</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>N6自然科学参考工具书</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>N7自然科学文献检索工具</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>N8自然科学调查、考察</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>O数理科学与化学</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>O1数学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>O2数学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>O3力学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>O4物理学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>O5物理学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>O6化学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>O7晶体学</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>P天文学、地球科学</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>P1天文学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>P2测绘学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>P3地球物理学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>P4大气科学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>P5地质学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>P6地质学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>P7海洋学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>P9自然地理学</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>Q生物科学</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Q0生物科学的理论与方法</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Q1普通生物学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Q2细胞学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Q3遗传学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Q4生理学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Q5生物化学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Q6生物物理学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Q7分子生物学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Q81生物工程学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Q91古生物学</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>R医药、卫生</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>R0一般理论</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>R1预防医学、卫生学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>R2中国医学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>R3基础医学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>R4临床医学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>R5内科学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>R6外科学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>R71妇产科学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>R8特种医学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>R9药学</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>S农业科学</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>S1农业基础科学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>S2农业工程</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>S3农学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>S4植物保护</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>S5农作物</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>S6园艺</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>S7林业</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>S8畜牧、动物医学、狩猎、蚕、蜂</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>S9水产、渔业</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>T工业技术</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>TB一般工业技术</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TD矿业工程</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TE石油、天然气工业</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TF冶金工业</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TG金属学与金属工艺</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TH机械、仪表工业</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TJ武器工业</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TK能源与动力工程</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TL原子能技术</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TM电子技术</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TN无线电电子技术、电信技术</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TP自动化技术、计算机技术</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TQ化学工业</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TS轻工业、手工业</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TU建筑科学</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TV水利工程</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>U交通运输</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>V航空、航天</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>V1航空、航天技术的研究与探索</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>V2航空</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>V3航空</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>V4航天（宇宙航行）</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>V5航天（宇宙飞行）</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>V7航空航天医学</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>X环境科学，安全科学</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>X1环境科学基础理论</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>X2社会与环境</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>X3环境保护管理</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>X4灾害及其防治</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>X5环境污染及其防治</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>X7废物处理与综合利用</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>X8环境质量评价与环境监测</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>X9安全科学</string>
+     </property>
+    </item>
+   </item>
+   <item>
+    <property name="text">
+     <string>Z综合性图书</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Z1丛书</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Z2百科全书、类书</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Z3辞典</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Z4论文集、全集、选集、杂著</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Z5年鉴，年刊</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Z6期刊、连续性出版物</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Z8图书目录、文摘、索引</string>
+     </property>
+    </item>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
